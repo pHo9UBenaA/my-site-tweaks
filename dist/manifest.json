@@ -3,19 +3,27 @@
   "name": "style-overrides-extension",
   "short_name": "style-overrides",
   "version": "0.1.0",
-  "description": "Chrome extension to override styles on a page",
+  "description": "Override styles on specific websites",
   "author": "pHo9UBenaA",
   "web_accessible_resources": [
     {
-      "resources": ["/styles/*.css"],
-      "matches": ["https://github.com/*"]
+      "resources": ["/styles/github.css"],
+      "matches": ["*://*.github.com/*"]
+    },
+    {
+      "resources": ["/styles/youtube.css"],
+      "matches": ["*://*.youtube.com/*"]
     }
   ],
   "permissions": ["storage"],
   "content_scripts": [
     {
-      "matches": ["https://github.com/*"],
+      "matches": ["*://*.github.com/*"],
       "css": ["styles/github.css"]
+    },
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "css": ["styles/youtube.css"]
     }
   ]
 }
