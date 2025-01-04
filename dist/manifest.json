@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "style-overrides-extension",
-  "short_name": "style-overrides",
+  "name": "Override Styles",
+  "short_name": "Override Styles",
   "version": "0.1.0",
   "description": "Override styles on specific websites",
   "author": "pHo9UBenaA",
