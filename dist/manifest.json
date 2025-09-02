@@ -17,6 +17,14 @@
     {
       "resources": ["/styles/twitch.css"],
       "matches": ["*://*.twitch.tv/*"]
+    },
+    {
+      "resources": ["/styles/teamspirit.css"],
+      "matches": [
+        "*://*.lightning.force.com/*",
+        "*://*.visualforce.com/*",
+        "*://*.force.com/*"
+      ]
     }
   ],
   "permissions": ["storage"],
@@ -32,6 +40,17 @@
     {
       "matches": ["*://*.twitch.tv/*"],
       "css": ["styles/twitch.css"]
+    },
+    {
+      "matches": [
+        "*://*.lightning.force.com/*",
+        "*://*.visualforce.com/*",
+        "*://*.force.com/*"
+      ],
+      "css": ["styles/teamspirit.css"],
+      "all_frames": true,
+      "match_about_blank": true,
+      "run_at": "document_start"
     }
   ]
 }
