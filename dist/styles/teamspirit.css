@@ -1,4 +1,6 @@
 /* id: empWorkTableArea */
 div.disp_block {
 	height: auto !important;
+	max-height: 360px !important;
+	overflow: auto !important;
 }
