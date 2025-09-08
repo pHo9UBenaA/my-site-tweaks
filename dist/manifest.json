@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Override Styles",
-  "short_name": "Override Styles",
+  "name": "Site Tweaks",
+  "short_name": "Site Tweaks",
   "version": "0.1.0",
-  "description": "Override styles on specific websites",
+  "description": "Per-site CSS overrides and small automations.",
   "author": "pHo9UBenaA",
   "web_accessible_resources": [
     {
