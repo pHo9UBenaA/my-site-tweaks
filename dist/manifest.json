@@ -51,6 +51,16 @@
       "all_frames": true,
       "match_about_blank": true,
       "run_at": "document_start"
+    },
+    {
+      "matches": ["https://chatgpt.com/codex/*"],
+      "js": ["js/chatgpt-codex.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["*://*.slack.com/archives/*"],
+      "js": ["js/slack.js"],
+      "run_at": "document_idle"
     }
   ]
 }
